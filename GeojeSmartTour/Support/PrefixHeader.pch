@@ -1,0 +1,16 @@
+//
+//  PrefixHeader.pch
+//  GeojeSmartTour
+//
+//  Created by min su kwon on 2017. 12. 11..
+//  Copyright © 2017년 min su kwon. All rights reserved.
+//
+
+#import "Utility.h"
+#import "Common.h"
+#import "AppDelegate.h"
+
+#define UTILITY                 [Utility sharedObject]
+#define APP_DEL                 (AppDelegate*)[[UIApplication sharedApplication] delegate]
+
+//#define ROOT_VIEW_CONTROLLER    [[[UIApplication sharedApplication] keyWindow] rootViewController]

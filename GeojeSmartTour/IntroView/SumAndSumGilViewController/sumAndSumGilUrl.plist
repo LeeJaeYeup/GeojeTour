@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>칠천량 해전길</string>
+		<key>url</key>
+		<string>http://tour.geoje.go.kr/index.geoje?menuCd=DOM_000008502006001000</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>맹종죽순 체험길</string>
+		<key>url</key>
+		<string>http://tour.geoje.go.kr/index.geoje?menuCd=DOM_000008502006002000</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>고려촌 문화체험길</string>
+		<key>url</key>
+		<string>http://tour.geoje.go.kr/index.geoje?menuCd=DOM_000008502006003000</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>계룡산 둘레길</string>
+		<key>url</key>
+		<string>http://tour.geoje.go.kr/index.geoje?menuCd=DOM_000008502006004000</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>충무공 이순신 만나러 가는길</string>
+		<key>url</key>
+		<string>http://tour.geoje.go.kr/index.geoje?menuCd=DOM_000008502006005000</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>양지암 등대길</string>
+		<key>url</key>
+		<string>http://tour.geoje.go.kr/index.geoje?menuCd=DOM_000008502006006000</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>바람의 언덕길</string>
+		<key>url</key>
+		<string>http://tour.geoje.go.kr/index.geoje?menuCd=DOM_000008502006008000</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>천주교 순례길</string>
+		<key>url</key>
+		<string>http://tour.geoje.go.kr/index.geoje?menuCd=DOM_000008502006007000</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>무지개길</string>
+		<key>url</key>
+		<string>http://tour.geoje.go.kr/index.geoje?menuCd=DOM_000008502006009000</string>
+	</dict>
+</array>
+</plist>

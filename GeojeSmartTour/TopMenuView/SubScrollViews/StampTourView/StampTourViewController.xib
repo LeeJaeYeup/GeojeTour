@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StampTourViewController">
+            <connections>
+                <outlet property="bottomStampTourHowToUseLabel1" destination="mxe-rA-GYC" id="B7d-FO-Yne"/>
+                <outlet property="bottomStampTourHowToUseLabel2" destination="vL2-iR-iKm" id="GDi-P2-8bR"/>
+                <outlet property="bottomStampTourHowToUseLabel3" destination="fS9-dJ-pnt" id="I2S-89-7Eq"/>
+                <outlet property="bottomStampTourHowToUseLabel4" destination="sLL-3R-rT8" id="R44-n8-plV"/>
+                <outlet property="bottomStampTourHowToUseTitleLabel" destination="van-EE-MzP" id="B7V-Bf-Fqe"/>
+                <outlet property="scrollView" destination="kNh-yH-F9g" id="6Vq-Bd-Mwr"/>
+                <outlet property="tableView" destination="OwL-nq-W8y" id="hXD-7I-Vo4"/>
+                <outlet property="topLogoSubtitleLabel" destination="Gmz-K9-TV8" id="lz1-VG-FAU"/>
+                <outlet property="topLogoTitleLabel1" destination="xvr-pJ-g9I" id="R5i-4k-GEu"/>
+                <outlet property="topLogoTitleLabel2" destination="bz3-Cw-4qz" id="p5b-gp-nBY"/>
+                <outlet property="topTitleLabel" destination="6He-cL-lE9" id="jE8-bj-pmt"/>
+                <outlet property="upperStampGetGuideTextLabel" destination="2Jx-db-vQ7" id="7W8-Uy-2Lq"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="1259"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KqE-eg-vcc" userLabel="상단 네비게이션 뷰">
+                    <rect key="frame" x="0.0" y="20" width="320" height="60"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="스탬프투어" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6He-cL-lE9">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="guL-Yk-UmZ">
+                            <rect key="frame" x="10" y="12.5" width="35" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="35" id="1ZI-wm-I3W"/>
+                                <constraint firstAttribute="height" constant="35" id="5lt-sV-Mnx"/>
+                            </constraints>
+                            <state key="normal" image="ico_left_arrow_black"/>
+                            <connections>
+                                <action selector="pressedBackBtn:" destination="-1" eventType="touchUpInside" id="MVO-f8-pBq"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.95078724619999999" green="0.97587627170000002" blue="0.97666352990000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="KFb-Lu-IlW"/>
+                        <constraint firstItem="guL-Yk-UmZ" firstAttribute="centerY" secondItem="KqE-eg-vcc" secondAttribute="centerY" id="PG2-FS-Vvv"/>
+                        <constraint firstItem="6He-cL-lE9" firstAttribute="width" secondItem="KqE-eg-vcc" secondAttribute="width" id="SQ5-At-tOL"/>
+                        <constraint firstItem="6He-cL-lE9" firstAttribute="leading" secondItem="KqE-eg-vcc" secondAttribute="leading" id="g6Y-oV-IZ5"/>
+                        <constraint firstItem="guL-Yk-UmZ" firstAttribute="leading" secondItem="KqE-eg-vcc" secondAttribute="leading" constant="10" id="jKT-42-Dfa"/>
+                        <constraint firstItem="6He-cL-lE9" firstAttribute="top" secondItem="KqE-eg-vcc" secondAttribute="top" id="tnp-oc-8sY"/>
+                        <constraint firstItem="6He-cL-lE9" firstAttribute="height" secondItem="KqE-eg-vcc" secondAttribute="height" id="wXb-GU-sAW"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kNh-yH-F9g">
+                    <rect key="frame" x="0.0" y="80" width="320" height="1179"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ibW-BQ-OZf">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stamp_main_top_bg" translatesAutoresizingMaskIntoConstraints="NO" id="5ej-C5-yiu">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비콘을 활용한" textAlignment="center" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xvr-pJ-g9I">
+                                    <rect key="frame" x="0.0" y="30" width="320" height="16"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="거제 스마트 스탬프투어!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bz3-Cw-4qz">
+                                    <rect key="frame" x="0.0" y="46" width="320" height="17"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gHi-on-8KN">
+                                    <rect key="frame" x="145" y="70" width="30" height="1"/>
+                                    <color key="backgroundColor" red="0.87058823529411766" green="0.91764705882352937" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="30" id="h9w-JE-79a"/>
+                                        <constraint firstAttribute="height" constant="1" id="rrD-n9-jtN"/>
+                                    </constraints>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="일일이 도장을 받는 번거로움은 그만! 똑똑한 스마트 스탬프투어로, 거제여행을 즐기세요" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gmz-K9-TV8">
+                                    <rect key="frame" x="0.0" y="72" width="320" height="43"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="43" id="Qe6-RF-1tz"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="Gmz-K9-TV8" secondAttribute="bottom" constant="25" id="2k1-Ri-ODT"/>
+                                <constraint firstItem="bz3-Cw-4qz" firstAttribute="centerX" secondItem="xvr-pJ-g9I" secondAttribute="centerX" id="6KQ-Fs-Qdl"/>
+                                <constraint firstItem="5ej-C5-yiu" firstAttribute="height" secondItem="ibW-BQ-OZf" secondAttribute="height" id="ClG-Nf-wZC"/>
+                                <constraint firstItem="5ej-C5-yiu" firstAttribute="centerY" secondItem="ibW-BQ-OZf" secondAttribute="centerY" id="IXY-xG-HD2"/>
+                                <constraint firstAttribute="height" constant="140" id="KLV-Wm-iKu"/>
+                                <constraint firstItem="5ej-C5-yiu" firstAttribute="centerX" secondItem="ibW-BQ-OZf" secondAttribute="centerX" id="UEb-8s-QGb"/>
+                                <constraint firstItem="gHi-on-8KN" firstAttribute="centerY" secondItem="ibW-BQ-OZf" secondAttribute="centerY" id="Umr-HD-Hcb"/>
+                                <constraint firstItem="Gmz-K9-TV8" firstAttribute="centerX" secondItem="ibW-BQ-OZf" secondAttribute="centerX" id="cGi-de-EmP"/>
+                                <constraint firstItem="5ej-C5-yiu" firstAttribute="width" secondItem="ibW-BQ-OZf" secondAttribute="width" id="e7h-g3-3k9"/>
+                                <constraint firstItem="bz3-Cw-4qz" firstAttribute="top" secondItem="xvr-pJ-g9I" secondAttribute="bottom" id="f6K-7f-I3N"/>
+                                <constraint firstItem="Gmz-K9-TV8" firstAttribute="width" secondItem="ibW-BQ-OZf" secondAttribute="width" id="fbi-jw-15k"/>
+                                <constraint firstItem="gHi-on-8KN" firstAttribute="centerX" secondItem="ibW-BQ-OZf" secondAttribute="centerX" id="hA4-tD-Zrj"/>
+                                <constraint firstItem="xvr-pJ-g9I" firstAttribute="centerX" secondItem="ibW-BQ-OZf" secondAttribute="centerX" id="hkK-t4-gFp"/>
+                                <constraint firstItem="xvr-pJ-g9I" firstAttribute="top" secondItem="ibW-BQ-OZf" secondAttribute="top" constant="30" id="uNM-VO-cIO"/>
+                                <constraint firstItem="xvr-pJ-g9I" firstAttribute="width" secondItem="ibW-BQ-OZf" secondAttribute="width" id="uhH-Zb-vjv"/>
+                                <constraint firstItem="bz3-Cw-4qz" firstAttribute="width" secondItem="xvr-pJ-g9I" secondAttribute="width" id="z98-hW-fHN"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1eW-ex-nUv">
+                            <rect key="frame" x="0.0" y="140" width="320" height="1040"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_check_orange" translatesAutoresizingMaskIntoConstraints="NO" id="DFm-pr-s4p">
+                                    <rect key="frame" x="10" y="8" width="30" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="30" id="1oy-DU-NDs"/>
+                                        <constraint firstAttribute="height" constant="30" id="GJz-c9-7h6"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="스탬프투어로 지정된 관광명소의 50M 이내로 접근하면, 스탬프를 받으실 수 있습니다." lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Jx-db-vQ7">
+                                    <rect key="frame" x="48" y="6" width="262" height="34"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="34" id="crP-Th-qs0"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="OwL-nq-W8y">
+                                    <rect key="frame" x="10" y="50" width="300" height="720"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="720" id="rZk-LT-3Wn"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="dataSource" destination="-1" id="wmw-aQ-s9O"/>
+                                        <outlet property="delegate" destination="-1" id="UmE-xk-egV"/>
+                                    </connections>
+                                </tableView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xOO-ws-uEk" userLabel="최하단 스탬프 투어 이용안내 부모뷰">
+                                    <rect key="frame" x="0.0" y="791" width="320" height="249"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="스탬프 투어 이용안내" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="van-EE-MzP">
+                                            <rect key="frame" x="15" y="0.0" width="290" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="Uq1-KL-gRA"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DhS-Vh-1TZ">
+                                            <rect key="frame" x="0.0" y="40" width="320" height="209"/>
+                                            <color key="backgroundColor" red="0.87058823529999996" green="0.91764705879999997" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B3e-dI-wMv">
+                                            <rect key="frame" x="0.0" y="40" width="320" height="50"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stamp_step_01" translatesAutoresizingMaskIntoConstraints="NO" id="Sli-cE-t15">
+                                                    <rect key="frame" x="10" y="5" width="40" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="3eD-wS-gvH"/>
+                                                        <constraint firstAttribute="height" constant="40" id="vjd-hL-5ab"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="거제여행 앱을 설치한다." lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mxe-rA-GYC">
+                                                    <rect key="frame" x="58" y="15" width="254" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="PVl-gT-kUw"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="GNs-eo-12O"/>
+                                                <constraint firstItem="Sli-cE-t15" firstAttribute="leading" secondItem="B3e-dI-wMv" secondAttribute="leading" constant="10" id="Oht-aV-Wh2"/>
+                                                <constraint firstAttribute="trailing" secondItem="mxe-rA-GYC" secondAttribute="trailing" constant="8" id="PaD-2g-PBn"/>
+                                                <constraint firstItem="mxe-rA-GYC" firstAttribute="leading" secondItem="Sli-cE-t15" secondAttribute="trailing" constant="8" id="fah-mp-LhT"/>
+                                                <constraint firstItem="Sli-cE-t15" firstAttribute="centerY" secondItem="B3e-dI-wMv" secondAttribute="centerY" id="wvA-xO-Boh"/>
+                                                <constraint firstItem="mxe-rA-GYC" firstAttribute="centerY" secondItem="Sli-cE-t15" secondAttribute="centerY" id="z06-mI-tMz"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9hQ-DR-HBb">
+                                            <rect key="frame" x="0.0" y="90" width="320" height="50"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stamp_step_02" translatesAutoresizingMaskIntoConstraints="NO" id="ozU-Xc-gs3">
+                                                    <rect key="frame" x="10" y="5" width="40" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="God-gc-lVx"/>
+                                                        <constraint firstAttribute="height" constant="40" id="ff3-eC-wMS"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="코스별 스탬프투어 명소를 차례대로 방문한다." lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vL2-iR-iKm">
+                                                    <rect key="frame" x="58" y="15" width="254" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="0wD-Z8-0hc"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="vL2-iR-iKm" firstAttribute="centerY" secondItem="ozU-Xc-gs3" secondAttribute="centerY" id="3Ql-Ui-zmK"/>
+                                                <constraint firstItem="ozU-Xc-gs3" firstAttribute="centerY" secondItem="9hQ-DR-HBb" secondAttribute="centerY" id="KGD-wq-L7X"/>
+                                                <constraint firstAttribute="trailing" secondItem="vL2-iR-iKm" secondAttribute="trailing" constant="8" id="eKc-RH-amQ"/>
+                                                <constraint firstAttribute="height" constant="50" id="jWz-Gb-rTA"/>
+                                                <constraint firstItem="ozU-Xc-gs3" firstAttribute="leading" secondItem="9hQ-DR-HBb" secondAttribute="leading" constant="10" id="pNT-ug-PdL"/>
+                                                <constraint firstItem="vL2-iR-iKm" firstAttribute="leading" secondItem="ozU-Xc-gs3" secondAttribute="trailing" constant="8" id="zCa-AW-ppn"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x7c-X2-5GP">
+                                            <rect key="frame" x="0.0" y="140" width="320" height="50"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stamp_step_03" translatesAutoresizingMaskIntoConstraints="NO" id="PCG-op-xop">
+                                                    <rect key="frame" x="10" y="5" width="40" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="9Be-is-Wdf"/>
+                                                        <constraint firstAttribute="width" constant="40" id="cWI-p3-fsM"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="명소 방문시마다, 거제 스마트관광앱에 스탬프가 찍히는 것을 확인한다." lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fS9-dJ-pnt">
+                                                    <rect key="frame" x="58" y="8" width="254" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="35" id="nrT-rx-XpS"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="PCG-op-xop" firstAttribute="centerY" secondItem="x7c-X2-5GP" secondAttribute="centerY" id="A9C-0g-Tie"/>
+                                                <constraint firstAttribute="height" constant="50" id="Cgj-tx-dfq"/>
+                                                <constraint firstAttribute="trailing" secondItem="fS9-dJ-pnt" secondAttribute="trailing" constant="8" id="gj2-H7-lfU"/>
+                                                <constraint firstItem="PCG-op-xop" firstAttribute="leading" secondItem="x7c-X2-5GP" secondAttribute="leading" constant="10" id="hd4-fk-OAT"/>
+                                                <constraint firstItem="fS9-dJ-pnt" firstAttribute="centerY" secondItem="PCG-op-xop" secondAttribute="centerY" id="rdH-CA-eaW"/>
+                                                <constraint firstItem="fS9-dJ-pnt" firstAttribute="leading" secondItem="PCG-op-xop" secondAttribute="trailing" constant="8" id="xFT-hH-Y0f"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rxA-62-PkN">
+                                            <rect key="frame" x="0.0" y="190" width="320" height="50"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stamp_step_04" translatesAutoresizingMaskIntoConstraints="NO" id="RNK-Zs-l5N">
+                                                    <rect key="frame" x="10" y="5" width="40" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="8m5-eR-fDa"/>
+                                                        <constraint firstAttribute="width" constant="40" id="Rcb-GB-m6i"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sLL-3R-rT8">
+                                                    <rect key="frame" x="58" y="8" width="254" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="35" id="fnj-nK-kqb"/>
+                                                    </constraints>
+                                                    <string key="text">해당코스에 모든 스탬프가 찍히면 완료!
+수고하셨습니다.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="RNK-Zs-l5N" firstAttribute="leading" secondItem="rxA-62-PkN" secondAttribute="leading" constant="10" id="Fjo-5l-qcP"/>
+                                                <constraint firstItem="sLL-3R-rT8" firstAttribute="centerY" secondItem="RNK-Zs-l5N" secondAttribute="centerY" id="MoU-oC-qNI"/>
+                                                <constraint firstItem="RNK-Zs-l5N" firstAttribute="centerY" secondItem="rxA-62-PkN" secondAttribute="centerY" id="mbP-Ly-Mu7"/>
+                                                <constraint firstAttribute="trailing" secondItem="sLL-3R-rT8" secondAttribute="trailing" constant="8" id="p2k-pE-HKM"/>
+                                                <constraint firstItem="sLL-3R-rT8" firstAttribute="leading" secondItem="RNK-Zs-l5N" secondAttribute="trailing" constant="8" id="pqd-82-hQp"/>
+                                                <constraint firstAttribute="height" constant="50" id="uQJ-Zd-TyP"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.56862745098039214" green="0.68627450980392157" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="9hQ-DR-HBb" firstAttribute="centerX" secondItem="B3e-dI-wMv" secondAttribute="centerX" id="1Pt-GI-PcI"/>
+                                        <constraint firstAttribute="bottom" secondItem="DhS-Vh-1TZ" secondAttribute="bottom" id="5b3-QU-kPV"/>
+                                        <constraint firstItem="x7c-X2-5GP" firstAttribute="top" secondItem="9hQ-DR-HBb" secondAttribute="bottom" id="84M-H9-4YA"/>
+                                        <constraint firstItem="DhS-Vh-1TZ" firstAttribute="leading" secondItem="xOO-ws-uEk" secondAttribute="leading" id="9A4-YZ-G2K"/>
+                                        <constraint firstItem="9hQ-DR-HBb" firstAttribute="height" secondItem="B3e-dI-wMv" secondAttribute="height" id="ERc-Ji-nUt"/>
+                                        <constraint firstItem="x7c-X2-5GP" firstAttribute="leading" secondItem="9hQ-DR-HBb" secondAttribute="leading" id="Fd7-AE-bT4"/>
+                                        <constraint firstItem="DhS-Vh-1TZ" firstAttribute="top" secondItem="van-EE-MzP" secondAttribute="bottom" id="FzI-wq-bNU"/>
+                                        <constraint firstItem="x7c-X2-5GP" firstAttribute="width" secondItem="9hQ-DR-HBb" secondAttribute="width" id="GfR-hu-wI7"/>
+                                        <constraint firstItem="DhS-Vh-1TZ" firstAttribute="width" secondItem="xOO-ws-uEk" secondAttribute="width" id="INd-TV-8P2"/>
+                                        <constraint firstItem="van-EE-MzP" firstAttribute="leading" secondItem="xOO-ws-uEk" secondAttribute="leading" constant="15" id="LHD-Gh-ZJE"/>
+                                        <constraint firstItem="x7c-X2-5GP" firstAttribute="height" secondItem="9hQ-DR-HBb" secondAttribute="height" id="PTg-If-mFp"/>
+                                        <constraint firstItem="B3e-dI-wMv" firstAttribute="width" secondItem="xOO-ws-uEk" secondAttribute="width" id="Qha-Od-WRz"/>
+                                        <constraint firstItem="rxA-62-PkN" firstAttribute="height" secondItem="x7c-X2-5GP" secondAttribute="height" id="Sp7-cv-Qcg"/>
+                                        <constraint firstItem="van-EE-MzP" firstAttribute="top" secondItem="xOO-ws-uEk" secondAttribute="top" id="TVB-cL-eX1"/>
+                                        <constraint firstItem="rxA-62-PkN" firstAttribute="leading" secondItem="x7c-X2-5GP" secondAttribute="leading" id="agL-2M-smU"/>
+                                        <constraint firstItem="B3e-dI-wMv" firstAttribute="top" secondItem="van-EE-MzP" secondAttribute="bottom" id="auq-Ys-ufN"/>
+                                        <constraint firstItem="9hQ-DR-HBb" firstAttribute="width" secondItem="B3e-dI-wMv" secondAttribute="width" id="eeh-x4-3uv"/>
+                                        <constraint firstAttribute="trailing" secondItem="van-EE-MzP" secondAttribute="trailing" constant="15" id="k6y-D7-llv"/>
+                                        <constraint firstItem="B3e-dI-wMv" firstAttribute="leading" secondItem="xOO-ws-uEk" secondAttribute="leading" id="p3p-9h-SbJ"/>
+                                        <constraint firstItem="rxA-62-PkN" firstAttribute="top" secondItem="x7c-X2-5GP" secondAttribute="bottom" id="qSK-WA-ZHj"/>
+                                        <constraint firstItem="9hQ-DR-HBb" firstAttribute="top" secondItem="B3e-dI-wMv" secondAttribute="bottom" id="vwj-o9-XWY"/>
+                                        <constraint firstItem="rxA-62-PkN" firstAttribute="width" secondItem="x7c-X2-5GP" secondAttribute="width" id="xus-qQ-UCG"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="OwL-nq-W8y" firstAttribute="top" secondItem="2Jx-db-vQ7" secondAttribute="bottom" constant="10" id="3E9-no-abR"/>
+                                <constraint firstAttribute="trailing" secondItem="2Jx-db-vQ7" secondAttribute="trailing" constant="10" id="F4F-8z-393"/>
+                                <constraint firstItem="xOO-ws-uEk" firstAttribute="top" secondItem="OwL-nq-W8y" secondAttribute="bottom" constant="21" id="KdC-5y-9Kn"/>
+                                <constraint firstItem="DFm-pr-s4p" firstAttribute="top" secondItem="1eW-ex-nUv" secondAttribute="top" constant="8" id="LuV-ON-2FW"/>
+                                <constraint firstItem="2Jx-db-vQ7" firstAttribute="leading" secondItem="DFm-pr-s4p" secondAttribute="trailing" constant="8" id="YYa-8C-3a2"/>
+                                <constraint firstItem="DFm-pr-s4p" firstAttribute="leading" secondItem="1eW-ex-nUv" secondAttribute="leading" constant="10" id="Z8a-jV-XMv"/>
+                                <constraint firstAttribute="height" constant="1040" id="ZLG-Nx-RBl"/>
+                                <constraint firstItem="2Jx-db-vQ7" firstAttribute="centerY" secondItem="DFm-pr-s4p" secondAttribute="centerY" id="aS0-4T-3B6"/>
+                                <constraint firstAttribute="bottom" secondItem="xOO-ws-uEk" secondAttribute="bottom" id="dJR-Tf-itc"/>
+                                <constraint firstItem="xOO-ws-uEk" firstAttribute="centerX" secondItem="1eW-ex-nUv" secondAttribute="centerX" id="gxl-l1-WhR"/>
+                                <constraint firstItem="OwL-nq-W8y" firstAttribute="leading" secondItem="DFm-pr-s4p" secondAttribute="leading" id="tgi-xK-d5X"/>
+                                <constraint firstItem="OwL-nq-W8y" firstAttribute="trailing" secondItem="2Jx-db-vQ7" secondAttribute="trailing" id="yyg-sU-Qjs"/>
+                                <constraint firstItem="xOO-ws-uEk" firstAttribute="width" secondItem="1eW-ex-nUv" secondAttribute="width" id="zOW-0I-WS6"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="1eW-ex-nUv" firstAttribute="leading" secondItem="kNh-yH-F9g" secondAttribute="leading" id="7rH-4B-Ofv"/>
+                        <constraint firstItem="ibW-BQ-OZf" firstAttribute="width" secondItem="kNh-yH-F9g" secondAttribute="width" id="7uv-hT-uce"/>
+                        <constraint firstItem="1eW-ex-nUv" firstAttribute="width" secondItem="ibW-BQ-OZf" secondAttribute="width" id="8IG-0v-bHs"/>
+                        <constraint firstAttribute="trailing" secondItem="ibW-BQ-OZf" secondAttribute="trailing" id="Bnz-kS-KaH"/>
+                        <constraint firstAttribute="bottom" secondItem="1eW-ex-nUv" secondAttribute="bottom" id="NgM-yC-EQd"/>
+                        <constraint firstItem="1eW-ex-nUv" firstAttribute="top" secondItem="ibW-BQ-OZf" secondAttribute="bottom" id="TYf-Pb-5O3"/>
+                        <constraint firstAttribute="trailing" secondItem="1eW-ex-nUv" secondAttribute="trailing" id="i9s-5w-iLb"/>
+                        <constraint firstItem="1eW-ex-nUv" firstAttribute="centerX" secondItem="kNh-yH-F9g" secondAttribute="centerX" id="izv-na-Uus"/>
+                        <constraint firstItem="ibW-BQ-OZf" firstAttribute="top" secondItem="kNh-yH-F9g" secondAttribute="top" id="qX8-Zs-dAV"/>
+                        <constraint firstItem="1eW-ex-nUv" firstAttribute="width" secondItem="kNh-yH-F9g" secondAttribute="width" id="tgA-ez-O49"/>
+                        <constraint firstItem="ibW-BQ-OZf" firstAttribute="leading" secondItem="kNh-yH-F9g" secondAttribute="leading" id="yGX-C1-Xqd"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="0.87058823529411766" green="0.91764705882352937" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="KqE-eg-vcc" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="3ff-Tv-ctk"/>
+                <constraint firstItem="kNh-yH-F9g" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="VvI-Xn-A3l"/>
+                <constraint firstItem="kNh-yH-F9g" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="Zek-e2-Kxd"/>
+                <constraint firstItem="kNh-yH-F9g" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="60" id="eA6-Dc-gWc"/>
+                <constraint firstItem="kNh-yH-F9g" firstAttribute="bottom" secondItem="Q5M-cg-NOt" secondAttribute="bottom" id="hSZ-FB-Mix"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="leading" secondItem="KqE-eg-vcc" secondAttribute="leading" id="ib6-9s-P1R"/>
+                <constraint firstItem="KqE-eg-vcc" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="ivK-Hr-k2g"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="-2945" y="-44.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ico_check_orange" width="40" height="40"/>
+        <image name="ico_left_arrow_black" width="55" height="55"/>
+        <image name="stamp_main_top_bg" width="640" height="215"/>
+        <image name="stamp_step_01" width="60" height="60"/>
+        <image name="stamp_step_02" width="60" height="60"/>
+        <image name="stamp_step_03" width="60" height="60"/>
+        <image name="stamp_step_04" width="60" height="60"/>
+    </resources>
+</document>

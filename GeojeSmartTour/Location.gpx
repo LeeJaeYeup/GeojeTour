@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<gpx version="1.1" creator="Xcode">
+    
+    <!--
+     Provide one or more waypoints containing a latitude/longitude pair. If you provide one
+     waypoint, Xcode will simulate that specific location. If you provide multiple waypoints,
+     Xcode will simulate a route visiting each waypoint.
+     -->
+<!--    <wpt lat="35.147458" lon="129.059248">-->
+
+<!--    <wpt lat="34.9992083" lon="128.693629">-->
+<!--        <name>오가횟집</name>-->
+<!--    </wpt>-->
+
+<!--<wpt lat="34.7751959" lon="128.641125">-->
+<!--    <name>부산횟집</name>-->
+<!--</wpt>-->
+
+<!--<wpt lat="34.8474733" lon="128.709803">-->
+<!--    <name>상상속의집</name>-->
+<!--</wpt>-->
+
+<!--<wpt lat="34.8908538" lon="128.620811">-->
+<!--    <name>조개은행</name>-->
+<!--</wpt>-->
+
+<!--<wpt lat="34.8880302" lon="128.617898">-->
+<!--    <name>대성수산</name>-->
+<!--</wpt>-->
+
+<!---->
+
+    <wpt lat="34.7763115964886" lon="128.642320139434">
+        <name>송월학횟집쿠폰</name>
+    </wpt>
+
+<!--    <wpt lat="34.8941743" lon="128.689877">-->
+<!--        <name>테스트지점</name>-->
+<!--    </wpt>-->
+
+<!--    <wpt lat="35.174971" lon="129.124843">-->
+<!--        <name>스카이비즈</name>-->
+<!--    </wpt>-->
+
+<!--    <wpt lat="34.96795890" lon="128.72493060">-->
+<!--        <name>이수도어촌체험마을</name>-->
+<!--    </wpt>-->
+
+        <!--
+         Optionally provide a time element for each waypoint. Xcode will interpolate movement
+         at a rate of speed based on the time elapsed between each waypoint. If you do not provide
+         a time element, then Xcode will use a fixed rate of speed.
+         
+         Waypoints must be sorted by time in ascending order.
+         -->
+<!--        <time>2014-09-24T14:55:37Z</time>-->
+<!--    </wpt>-->
+<!--    <wpt lat="35.14064800" lon="129.06142800">-->
+<!--        <name>테스트2</name>-->
+<!--    </wpt>-->
+<!--    <wpt lat="35.14056300" lon="129.06128100">-->
+<!--        <name>테스트3</name>-->
+<!--    </wpt>-->
+<!--    <wpt lat="35.14049100" lon="129.06116900">-->
+<!--        <name>테스트3</name>-->
+<!--    </wpt>-->
+
+</gpx>

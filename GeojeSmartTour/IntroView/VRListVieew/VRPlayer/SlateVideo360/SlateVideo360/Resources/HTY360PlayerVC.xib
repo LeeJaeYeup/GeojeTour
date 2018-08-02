@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HTY360PlayerVC">
+            <connections>
+                <outlet property="cardboardBtn" destination="pzE-OR-OGX" id="MgQ-2l-J4s"/>
+                <outlet property="iconsBackView" destination="EWv-Bb-YRx" id="1cP-yT-XNK"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EWv-Bb-YRx">
+                    <rect key="frame" x="488" y="275" width="70" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pzE-OR-OGX">
+                            <rect key="frame" x="0.0" y="12.5" width="25" height="15"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="15" id="Q1p-ls-2Lo"/>
+                                <constraint firstAttribute="width" constant="25" id="xYF-JP-0b9"/>
+                            </constraints>
+                            <state key="normal" image="ico_cardboard"/>
+                            <connections>
+                                <action selector="pressedCardboardBtn:" destination="-1" eventType="touchUpInside" id="eYX-2Q-Z1M"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oOD-66-j1s">
+                            <rect key="frame" x="35" y="2.5" width="35" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="40o-9W-7H1"/>
+                                <constraint firstAttribute="width" constant="35" id="tHj-Dp-XMX"/>
+                            </constraints>
+                            <state key="normal" image="fullScreenBtn"/>
+                            <connections>
+                                <action selector="fullSize:" destination="-1" eventType="touchUpInside" id="uQO-Xl-5Kg"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="oOD-66-j1s" secondAttribute="trailing" id="DxP-uH-YZ2"/>
+                        <constraint firstItem="pzE-OR-OGX" firstAttribute="leading" secondItem="EWv-Bb-YRx" secondAttribute="leading" id="GiI-qh-mjK"/>
+                        <constraint firstItem="pzE-OR-OGX" firstAttribute="centerY" secondItem="EWv-Bb-YRx" secondAttribute="centerY" id="KE6-jJ-PKb"/>
+                        <constraint firstItem="oOD-66-j1s" firstAttribute="centerY" secondItem="EWv-Bb-YRx" secondAttribute="centerY" id="dEC-HY-d4N"/>
+                        <constraint firstAttribute="height" constant="40" id="fJk-Qx-z7N"/>
+                        <constraint firstAttribute="width" constant="70" id="yzA-QK-Kwj"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="EWv-Bb-YRx" secondAttribute="bottom" constant="5" id="VCU-F5-Ihn"/>
+                <constraint firstAttribute="trailing" secondItem="EWv-Bb-YRx" secondAttribute="trailing" constant="10" id="WLS-Jj-cIn"/>
+            </constraints>
+            <point key="canvasLocation" x="-2469" y="-132"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="fullScreenBtn" width="72" height="72"/>
+        <image name="ico_cardboard" width="62" height="38"/>
+    </resources>
+</document>

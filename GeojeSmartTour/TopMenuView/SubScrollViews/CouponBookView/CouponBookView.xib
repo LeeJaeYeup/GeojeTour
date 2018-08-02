@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CouponBookView">
+            <connections>
+                <outlet property="couponCollectionView" destination="Z7h-s8-gfi" id="E9C-PK-jmX"/>
+                <outlet property="howToGetCouponMainTextLabel" destination="gaL-hr-930" id="Mi6-fC-mMU"/>
+                <outlet property="howToGetCouponTitleLabel" destination="Wl1-S2-diQ" id="715-et-gAL"/>
+                <outlet property="howToUseCautionLabel" destination="gGf-GZ-VGj" id="0Av-JD-YFm"/>
+                <outlet property="howToUseMainTextLabel" destination="cAj-bX-c1c" id="kIM-yr-4uc"/>
+                <outlet property="howToUseTitleLabel" destination="bhT-47-sCd" id="0WA-Vd-4sF"/>
+                <outlet property="mainXibView" destination="iN0-l3-epB" id="eSD-T8-qDp"/>
+                <outlet property="myCouponListTitleLabel" destination="Rlp-j1-7Hj" id="NyG-bE-QNA"/>
+                <outlet property="scrollContentsViewHeight" destination="FbK-Oy-X7W" id="HUP-az-Yte"/>
+                <outlet property="scrollView" destination="9z8-Ij-CdB" id="0hO-1I-ELf"/>
+                <outlet property="topLogoSubTitleLabel" destination="7fA-g7-NK0" id="x2x-lx-XYc"/>
+                <outlet property="topLogoTitle01Label" destination="MG9-dP-cFw" id="XJu-cZ-RFh"/>
+                <outlet property="topLogoTitle02Label" destination="SDi-sQ-3Fw" id="f7P-H2-IJt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="653"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9z8-Ij-CdB">
+                    <rect key="frame" x="0.0" y="20" width="320" height="633"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Acc-te-6ZM" userLabel="스크롤뷰 컨텐츠 뷰">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="650"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ls2-Wu-7by">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coupon_book_top_bg" translatesAutoresizingMaskIntoConstraints="NO" id="DFB-Iy-bVb">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="자동으로 내폰에" textAlignment="center" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MG9-dP-cFw">
+                                            <rect key="frame" x="0.0" y="12" width="320" height="18"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="할인쿠폰이 배달된다면?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SDi-sQ-3Fw">
+                                            <rect key="frame" x="0.0" y="30" width="320" height="21"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dxs-ra-5fz">
+                                            <rect key="frame" x="145" y="60" width="30" height="1"/>
+                                            <color key="backgroundColor" red="0.87058823529999996" green="0.91764705879999997" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="30" id="7A0-ee-vdz"/>
+                                                <constraint firstAttribute="height" constant="1" id="cB2-u1-yWZ"/>
+                                            </constraints>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="거제를 여행할 때, 경제적으로 즐기고, 먹고, 자는 방법! 할인쿠폰북을 이용해 보세요." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7fA-g7-NK0">
+                                            <rect key="frame" x="0.0" y="65" width="320" height="43"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="43" id="bSg-o0-WUB"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstItem="SDi-sQ-3Fw" firstAttribute="width" secondItem="MG9-dP-cFw" secondAttribute="width" id="4NJ-yg-O6u"/>
+                                        <constraint firstItem="MG9-dP-cFw" firstAttribute="top" secondItem="Ls2-Wu-7by" secondAttribute="top" constant="12" id="5gA-Zn-4xz"/>
+                                        <constraint firstItem="SDi-sQ-3Fw" firstAttribute="centerX" secondItem="MG9-dP-cFw" secondAttribute="centerX" id="BAz-zO-Alk"/>
+                                        <constraint firstItem="DFB-Iy-bVb" firstAttribute="centerX" secondItem="Ls2-Wu-7by" secondAttribute="centerX" id="DAj-Wd-VY1"/>
+                                        <constraint firstItem="dxs-ra-5fz" firstAttribute="centerX" secondItem="Ls2-Wu-7by" secondAttribute="centerX" id="Ehk-CU-UT3"/>
+                                        <constraint firstItem="DFB-Iy-bVb" firstAttribute="centerY" secondItem="Ls2-Wu-7by" secondAttribute="centerY" id="UaO-Bg-Ync"/>
+                                        <constraint firstItem="DFB-Iy-bVb" firstAttribute="height" secondItem="Ls2-Wu-7by" secondAttribute="height" id="V50-e2-w82"/>
+                                        <constraint firstItem="SDi-sQ-3Fw" firstAttribute="top" secondItem="MG9-dP-cFw" secondAttribute="bottom" id="Vso-aj-sF7"/>
+                                        <constraint firstItem="DFB-Iy-bVb" firstAttribute="width" secondItem="Ls2-Wu-7by" secondAttribute="width" id="a6o-AW-o7a"/>
+                                        <constraint firstItem="dxs-ra-5fz" firstAttribute="centerY" secondItem="Ls2-Wu-7by" secondAttribute="centerY" id="bJo-qJ-3kl"/>
+                                        <constraint firstAttribute="bottom" secondItem="7fA-g7-NK0" secondAttribute="bottom" constant="12" id="fRT-2t-xTI"/>
+                                        <constraint firstItem="7fA-g7-NK0" firstAttribute="width" secondItem="Ls2-Wu-7by" secondAttribute="width" id="fYZ-8J-RRR"/>
+                                        <constraint firstItem="7fA-g7-NK0" firstAttribute="centerX" secondItem="Ls2-Wu-7by" secondAttribute="centerX" id="h5D-6f-PcG"/>
+                                        <constraint firstItem="MG9-dP-cFw" firstAttribute="width" secondItem="Ls2-Wu-7by" secondAttribute="width" id="ptr-MN-M3s"/>
+                                        <constraint firstItem="MG9-dP-cFw" firstAttribute="centerX" secondItem="Ls2-Wu-7by" secondAttribute="centerX" id="re3-3b-J8x"/>
+                                        <constraint firstAttribute="height" constant="120" id="sLj-Hq-QHD"/>
+                                    </constraints>
+                                    <viewLayoutGuide key="safeArea" id="tym-pg-lwK"/>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eHP-Co-xny">
+                                    <rect key="frame" x="0.0" y="120" width="320" height="270"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vdg-pF-Mf5">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="102.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="할인쿠폰 받는방법" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wl1-S2-diQ">
+                                                    <rect key="frame" x="15" y="10" width="290" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="19.5" id="v6q-SU-U8J"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.057685479519999999" green="0.37896078820000001" blue="0.72076380250000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="할인쿠폰이 적용되는 명소, 맛집, 숙박으로부터 50M 이내 접근하면, 자동으로 여러분의 폰으로 쿠폰이 발송됩니다." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaL-hr-930">
+                                                    <rect key="frame" x="15" y="35" width="290" height="50.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="Wl1-S2-diQ" firstAttribute="leading" secondItem="vdg-pF-Mf5" secondAttribute="leading" constant="15" id="C1r-Gu-qIJ"/>
+                                                <constraint firstItem="gaL-hr-930" firstAttribute="top" secondItem="Wl1-S2-diQ" secondAttribute="bottom" constant="5" id="Ckg-3g-Vlg"/>
+                                                <constraint firstItem="gaL-hr-930" firstAttribute="trailing" secondItem="Wl1-S2-diQ" secondAttribute="trailing" id="gd4-oo-73f"/>
+                                                <constraint firstItem="gaL-hr-930" firstAttribute="leading" secondItem="Wl1-S2-diQ" secondAttribute="leading" id="jN6-jC-FqJ"/>
+                                                <constraint firstItem="Wl1-S2-diQ" firstAttribute="top" secondItem="vdg-pF-Mf5" secondAttribute="top" constant="10" id="q3d-FT-DCh"/>
+                                                <constraint firstAttribute="trailing" secondItem="Wl1-S2-diQ" secondAttribute="trailing" constant="15" id="uFz-zY-02N"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pF5-59-ou5">
+                                            <rect key="frame" x="0.0" y="102.5" width="320" height="103"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이용방법" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhT-47-sCd">
+                                                    <rect key="frame" x="15" y="10" width="290" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="19.5" id="6rw-wj-jUB"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.057685479519999999" green="0.37896078820000001" blue="0.72076380250000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="스마트폰으로 받은 쿠폰을 업체에게 보여 주세요. ※ 인터넷 예매 할인 등 중복할인 불가합니다." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAj-bX-c1c">
+                                                    <rect key="frame" x="15" y="35" width="290" height="34"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="* 현재 거제여행 앱 쿠폰북은 시범운행 중입니다." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gGf-GZ-VGj">
+                                                    <rect key="frame" x="15" y="74" width="290" height="17"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                    <color key="textColor" red="1" green="0.1005795268" blue="0.1239143951" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="gGf-GZ-VGj" firstAttribute="leading" secondItem="cAj-bX-c1c" secondAttribute="leading" id="Cky-Qy-hzd"/>
+                                                <constraint firstItem="gGf-GZ-VGj" firstAttribute="top" secondItem="cAj-bX-c1c" secondAttribute="bottom" constant="5" id="E3C-Vc-nOS"/>
+                                                <constraint firstItem="bhT-47-sCd" firstAttribute="top" secondItem="pF5-59-ou5" secondAttribute="top" constant="10" id="IzQ-rL-ZAM"/>
+                                                <constraint firstItem="cAj-bX-c1c" firstAttribute="trailing" secondItem="bhT-47-sCd" secondAttribute="trailing" id="Xha-SO-kWb"/>
+                                                <constraint firstItem="cAj-bX-c1c" firstAttribute="top" secondItem="bhT-47-sCd" secondAttribute="bottom" constant="5" id="fEQ-lz-x14"/>
+                                                <constraint firstItem="bhT-47-sCd" firstAttribute="leading" secondItem="pF5-59-ou5" secondAttribute="leading" constant="15" id="fue-oL-rxw"/>
+                                                <constraint firstAttribute="trailing" secondItem="bhT-47-sCd" secondAttribute="trailing" constant="15" id="fvp-EH-l1H"/>
+                                                <constraint firstItem="gGf-GZ-VGj" firstAttribute="trailing" secondItem="cAj-bX-c1c" secondAttribute="trailing" id="oQJ-rb-aXY"/>
+                                                <constraint firstItem="cAj-bX-c1c" firstAttribute="leading" secondItem="bhT-47-sCd" secondAttribute="leading" id="zMC-3W-iS0"/>
+                                            </constraints>
+                                        </view>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Pf-ad-RkQ">
+                                            <rect key="frame" x="66" y="210.5" width="187" height="45"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="45" id="X6v-wL-uy9"/>
+                                                <constraint firstAttribute="width" constant="187" id="dbn-lQ-jd2"/>
+                                            </constraints>
+                                            <state key="normal" image="btn_coupon_list"/>
+                                            <connections>
+                                                <action selector="pressedCouponListBtn:" destination="-1" eventType="touchUpInside" id="JgJ-Xq-tY9"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.87687808280000001" green="0.91866534950000001" blue="0.9525715709" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="pF5-59-ou5" firstAttribute="width" secondItem="vdg-pF-Mf5" secondAttribute="width" id="7if-jb-cQO"/>
+                                        <constraint firstItem="vdg-pF-Mf5" firstAttribute="top" secondItem="eHP-Co-xny" secondAttribute="top" id="A4T-CE-IKc"/>
+                                        <constraint firstAttribute="height" constant="270" id="Vh9-rR-lvA"/>
+                                        <constraint firstItem="pF5-59-ou5" firstAttribute="leading" secondItem="vdg-pF-Mf5" secondAttribute="leading" id="ViZ-MV-WTH"/>
+                                        <constraint firstItem="pF5-59-ou5" firstAttribute="top" secondItem="vdg-pF-Mf5" secondAttribute="bottom" id="cmN-78-uqG"/>
+                                        <constraint firstItem="2Pf-ad-RkQ" firstAttribute="top" secondItem="pF5-59-ou5" secondAttribute="bottom" constant="5" id="dgk-QW-Ffj"/>
+                                        <constraint firstItem="vdg-pF-Mf5" firstAttribute="leading" secondItem="eHP-Co-xny" secondAttribute="leading" id="ehq-uw-MOt"/>
+                                        <constraint firstItem="vdg-pF-Mf5" firstAttribute="width" secondItem="eHP-Co-xny" secondAttribute="width" id="iKH-Cp-odh"/>
+                                        <constraint firstItem="2Pf-ad-RkQ" firstAttribute="centerX" secondItem="eHP-Co-xny" secondAttribute="centerX" id="mVC-3L-m77"/>
+                                        <constraint firstItem="pF5-59-ou5" firstAttribute="height" secondItem="vdg-pF-Mf5" secondAttribute="height" id="q8Y-Z2-iUo"/>
+                                        <constraint firstItem="vdg-pF-Mf5" firstAttribute="height" secondItem="eHP-Co-xny" secondAttribute="height" multiplier="0.38" id="uKx-mk-lGI"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="44L-Ki-dsE">
+                                    <rect key="frame" x="0.0" y="390" width="320" height="260"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="내가 받은 할인쿠폰" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rlp-j1-7Hj">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+                                            <color key="backgroundColor" red="0.59069496393203735" green="0.68820089101791382" blue="0.75634115934371948" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="45" id="jQP-Z4-djJ"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Z7h-s8-gfi">
+                                            <rect key="frame" x="0.0" y="45" width="320" height="215"/>
+                                            <color key="backgroundColor" red="0.79638057947158813" green="0.8242078423500061" blue="0.84678751230239868" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="krh-lK-H0s">
+                                                <size key="itemSize" width="50" height="50"/>
+                                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            </collectionViewFlowLayout>
+                                            <connections>
+                                                <outlet property="dataSource" destination="-1" id="lF7-0L-bDM"/>
+                                                <outlet property="delegate" destination="-1" id="yHi-YF-9u1"/>
+                                            </connections>
+                                        </collectionView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstItem="Z7h-s8-gfi" firstAttribute="leading" secondItem="Rlp-j1-7Hj" secondAttribute="leading" id="2TN-eI-8eG"/>
+                                        <constraint firstItem="Z7h-s8-gfi" firstAttribute="top" secondItem="Rlp-j1-7Hj" secondAttribute="bottom" id="53x-gi-2M5"/>
+                                        <constraint firstAttribute="bottom" secondItem="Z7h-s8-gfi" secondAttribute="bottom" id="7w7-Fc-Up9"/>
+                                        <constraint firstItem="Rlp-j1-7Hj" firstAttribute="width" secondItem="44L-Ki-dsE" secondAttribute="width" id="BBJ-Ul-vOS"/>
+                                        <constraint firstItem="Rlp-j1-7Hj" firstAttribute="leading" secondItem="44L-Ki-dsE" secondAttribute="leading" id="VgB-BK-i0t"/>
+                                        <constraint firstItem="Z7h-s8-gfi" firstAttribute="width" secondItem="44L-Ki-dsE" secondAttribute="width" id="lSa-it-LMv"/>
+                                        <constraint firstItem="Rlp-j1-7Hj" firstAttribute="top" secondItem="44L-Ki-dsE" secondAttribute="top" id="yZP-7B-4ny"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="44L-Ki-dsE" secondAttribute="bottom" id="1A9-2K-Fmz"/>
+                                <constraint firstItem="44L-Ki-dsE" firstAttribute="width" secondItem="eHP-Co-xny" secondAttribute="width" id="8Hb-Dv-xtN"/>
+                                <constraint firstItem="44L-Ki-dsE" firstAttribute="leading" secondItem="eHP-Co-xny" secondAttribute="leading" id="D7b-5l-Qk0"/>
+                                <constraint firstAttribute="height" constant="650" id="FbK-Oy-X7W"/>
+                                <constraint firstItem="eHP-Co-xny" firstAttribute="width" secondItem="Acc-te-6ZM" secondAttribute="width" id="SvW-q5-Szy"/>
+                                <constraint firstItem="eHP-Co-xny" firstAttribute="top" secondItem="Acc-te-6ZM" secondAttribute="top" constant="120" id="cW5-mj-DbJ"/>
+                                <constraint firstItem="44L-Ki-dsE" firstAttribute="top" secondItem="eHP-Co-xny" secondAttribute="bottom" id="gW1-94-cE3"/>
+                                <constraint firstItem="Ls2-Wu-7by" firstAttribute="leading" secondItem="Acc-te-6ZM" secondAttribute="leading" id="grd-LH-hVh"/>
+                                <constraint firstItem="eHP-Co-xny" firstAttribute="leading" secondItem="Acc-te-6ZM" secondAttribute="leading" id="nx2-z0-Zop"/>
+                                <constraint firstItem="Ls2-Wu-7by" firstAttribute="top" secondItem="Acc-te-6ZM" secondAttribute="top" id="oXP-lu-LJ9"/>
+                                <constraint firstItem="Ls2-Wu-7by" firstAttribute="width" secondItem="Acc-te-6ZM" secondAttribute="width" id="taQ-se-bdp"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Acc-te-6ZM" secondAttribute="trailing" id="6Fy-rZ-xei"/>
+                        <constraint firstItem="Acc-te-6ZM" firstAttribute="top" secondItem="9z8-Ij-CdB" secondAttribute="top" id="Bp8-T5-VC2"/>
+                        <constraint firstItem="Acc-te-6ZM" firstAttribute="leading" secondItem="9z8-Ij-CdB" secondAttribute="leading" id="Ut0-hd-BwP"/>
+                        <constraint firstAttribute="bottom" secondItem="Acc-te-6ZM" secondAttribute="bottom" id="chT-Pr-GnT"/>
+                        <constraint firstItem="Acc-te-6ZM" firstAttribute="width" secondItem="9z8-Ij-CdB" secondAttribute="width" id="mZ7-nb-arV"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="9z8-Ij-CdB" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="1TB-LE-9Hy"/>
+                <constraint firstItem="9z8-Ij-CdB" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="RbP-2Z-Ym8"/>
+                <constraint firstItem="9z8-Ij-CdB" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="s4c-yl-PVl"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="9z8-Ij-CdB" secondAttribute="bottom" id="x6j-EX-5uE"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-1960" y="-193.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_coupon_list" width="320" height="70"/>
+        <image name="coupon_book_top_bg" width="640" height="217"/>
+    </resources>
+</document>

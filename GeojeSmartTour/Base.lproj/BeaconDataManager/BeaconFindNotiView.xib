@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BeaconFindNotiView">
+            <connections>
+                <outlet property="beaconNotiTitleLabel" destination="aXC-g7-aDf" id="nMd-zY-wur"/>
+                <outlet property="mainXibView" destination="iN0-l3-epB" id="FDr-kE-zuU"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="575" height="165"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aXC-g7-aDf" customClass="MarqueeLabel">
+                    <rect key="frame" x="30" y="5" width="442.5" height="155"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vms-O4-nQM">
+                    <rect key="frame" x="5" y="5" width="155" height="155"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="vms-O4-nQM" secondAttribute="height" multiplier="1:1" id="GJ5-4a-pah"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m3y-DC-ddJ">
+                    <rect key="frame" x="0.0" y="0.0" width="575" height="165"/>
+                    <connections>
+                        <action selector="pressedSelectNotiView:" destination="-1" eventType="touchUpInside" id="Gfo-D3-INT"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HrI-Yf-lfC">
+                    <rect key="frame" x="482.5" y="41.5" width="82.5" height="82.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="HrI-Yf-lfC" secondAttribute="height" multiplier="1:1" id="NRP-hr-W2W"/>
+                    </constraints>
+                    <state key="normal" image="ico_x_white"/>
+                    <connections>
+                        <action selector="pressedBeaconNotiCloseBtn:" destination="-1" eventType="touchUpInside" id="cmG-Wq-Usj"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.34917534719999999" green="0.32889539340000001" blue="0.30497447799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="m3y-DC-ddJ" secondAttribute="trailing" id="26W-D2-Wo3"/>
+                <constraint firstItem="vms-O4-nQM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="BJW-eP-8Jb"/>
+                <constraint firstAttribute="bottom" secondItem="vms-O4-nQM" secondAttribute="bottom" constant="5" id="C0b-FD-F80"/>
+                <constraint firstItem="m3y-DC-ddJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Cy3-iA-uBs"/>
+                <constraint firstItem="vms-O4-nQM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="Jxq-bf-C6e"/>
+                <constraint firstItem="m3y-DC-ddJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="VZh-pX-dKU"/>
+                <constraint firstItem="HrI-Yf-lfC" firstAttribute="leading" secondItem="aXC-g7-aDf" secondAttribute="trailing" constant="10" id="ZU0-Ne-gsN"/>
+                <constraint firstAttribute="bottom" secondItem="m3y-DC-ddJ" secondAttribute="bottom" id="cRs-p3-AmV"/>
+                <constraint firstItem="m3y-DC-ddJ" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="egP-1m-DT9"/>
+                <constraint firstItem="m3y-DC-ddJ" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="fx6-3N-6Js"/>
+                <constraint firstAttribute="trailing" secondItem="HrI-Yf-lfC" secondAttribute="trailing" constant="10" id="h9D-15-2uh"/>
+                <constraint firstAttribute="bottom" secondItem="aXC-g7-aDf" secondAttribute="bottom" constant="5" id="keq-Gk-h6B"/>
+                <constraint firstItem="aXC-g7-aDf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="nF6-24-FaV"/>
+                <constraint firstItem="HrI-Yf-lfC" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="1:2" id="vUw-6R-xfs"/>
+                <constraint firstItem="HrI-Yf-lfC" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="vdm-yt-lZA"/>
+                <constraint firstItem="aXC-g7-aDf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="wwC-JO-Plq"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-1004" y="-16"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ico_x_white" width="45" height="45"/>
+    </resources>
+</document>

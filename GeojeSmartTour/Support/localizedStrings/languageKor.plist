@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>lk_setting_info_receive_title</key>
+	<string>정보수신</string>
+	<key>lk_setting_info_beacon_receive_text1</key>
+	<string>비콘정보 알림 수신여부를 선택하세요.</string>
+	<key>lk_setting_info_beacon_receive_text2</key>
+	<string>비콘알림 소리설정</string>
+	<key>lk_setting_info_beacon_receive_text3</key>
+	<string>비콘알림 진동설정</string>
+	<key>lk_setting_top_title</key>
+	<string>마이페이지</string>
+	<key>lk_setting_info_push_receive_text1</key>
+	<string>푸시알림(각종 소식) 수신여부를 선택하세요.</string>
+	<key>lk_setting_info_push_receive_text2</key>
+	<string>푸시알림 소리설정</string>
+	<key>lk_setting_info_language_text</key>
+	<string>언어설정</string>
+	<key>lk_intro_main_menu_text</key>
+	<array>
+		<string>주변관광</string>
+		<string>360 VR영상</string>
+		<string>스탬프투어</string>
+		<string>할인쿠폰</string>
+		<string>거제여행</string>
+		<string>커뮤니티</string>
+		<string>섬앤섬길</string>
+		<string>교통정보센터</string>
+	</array>
+	<key>lk_smart_tourism_category</key>
+	<array>
+		<string>관광명소</string>
+		<string>추천명소8경</string>
+		<string>체험관광</string>
+		<string>맛집</string>
+		<string>숙박</string>
+		<string>관광안내소</string>
+		<string>교통시설</string>
+		<string>전통시장</string>
+		<string>주차장</string>
+		<string>공공WIFI</string>
+	</array>
+	<key>lk_360vr_logo_title1</key>
+	<string>360 VR영상으로</string>
+	<key>lk_360vr_logo_title2</key>
+	<string>미리보는 거제여행</string>
+	<key>lk_360vr_logo_subtitle</key>
+	<string>실감나는 여행으로 여러분을 초대합니다.</string>
+	<key>lk_360vr_video_menu</key>
+	<array>
+		<string>자전거 체험</string>
+		<string>패러글라이딩 체험</string>
+		<string>오토바이 체험</string>
+		<string>드론 체험</string>
+		<string>낙하산 체험</string>
+		<string>자동차 체험</string>
+		<string>도보 체험</string>
+		<string>승마 체험</string>
+		<string>등산 체험</string>
+	</array>
+	<key>lk_stamptour_top_logo_title1</key>
+	<string>비콘을 활용한</string>
+	<key>lk_stamptour_top_logo_title2</key>
+	<string>거제 스마트 스탬프투어!</string>
+	<key>lk_stamptour_top_logo_subtitle</key>
+	<string>일일이 도장을 받는 번거로움은 그만! 똑똑한 스마트 스탬프투어로, 거제여행을 즐기세요</string>
+	<key>lk_stamptour_upper_stamp_guide_text</key>
+	<string>스탬프투어로 지정된 관광명소의 50M 이내로 접근하면, 스탬프를 받으실 수 있습니다.</string>
+	<key>lk_stamptour_bottom_how_to_use_title</key>
+	<string>스탬프 투어 이용안내</string>
+	<key>lk_stamptour_bottom_how_to_use_body_array</key>
+	<array>
+		<string>거제여행 앱을 설치한다.</string>
+		<string>코스별 스탬프투어 명소를 차례대로 방문한다.</string>
+		<string>명소 방문시마다, 거제 스마트관광앱에 스탬프가 찍히는 것을 확인한다.</string>
+		<string>해당코스에 모든 스탬프가 찍히면 완료! 수고하셨습니다.</string>
+	</array>
+	<key>lk_stamptour_course_list_title_array</key>
+	<array>
+		<string>거제8경 투어</string>
+		<string>관광지 투어</string>
+		<string>전망대 투어</string>
+		<string>섬&amp;섬길</string>
+		<string>섬 투어</string>
+		<string>11대명산 투어</string>
+		<string>전통시장 투어</string>
+		<string>해양데크 투어</string>
+	</array>
+	<key>lk_coupon_top_logo_title01</key>
+	<string>자동으로 내폰에</string>
+	<key>lk_coupon_top_logo_title02</key>
+	<string>할인쿠폰이 배달된다면?</string>
+	<key>lk_coupon_top_logo_subtitle</key>
+	<string>거제를 여행할때, 경제적으로 즐기고, 먹고, 자는방법! 할인쿠폰북을 이용해 보세요.</string>
+	<key>lk_coupon_how_to_get_title</key>
+	<string>할인쿠폰 받는방법</string>
+	<key>lk_coupon_how_to_get_main_text</key>
+	<string>할인쿠폰이 적용되는 명소, 맛집, 숙박으로부터 50M이내 접근하면, 자동으로 여러분의 폰으로 쿠폰이 발송됩니다.</string>
+	<key>lk_coupon_how_to_use_title</key>
+	<string>이용방법</string>
+	<key>lk_coupon_how_to_use_main_text</key>
+	<string>스마트폰으로 받은 쿠폰을 업체에게 보여 주세요. ※ 인터넷 예매 할인 등 중복할인 불가합니다.</string>
+	<key>lk_coupon_how_to_use_caution_text</key>
+	<string>* 현재 거제여행 앱 쿠폰북은 시범운행 중입니다.</string>
+	<key>lk_coupon_my_coupon_list_title</key>
+	<string>내가 받은 할인쿠폰</string>
+</dict>
+</plist>

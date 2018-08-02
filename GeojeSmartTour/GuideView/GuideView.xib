@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GuideView">
+            <connections>
+                <outlet property="mainXibView" destination="iN0-l3-epB" id="DdK-bQ-qIg"/>
+                <outlet property="pageControl" destination="VqL-pg-nij" id="Kap-NQ-qMS"/>
+                <outlet property="scrollView" destination="XNV-BN-swb" id="7Ld-JR-TTi"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="422"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XNV-BN-swb">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="422"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="KZT-ne-xvY"/>
+                    </connections>
+                </scrollView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="8" translatesAutoresizingMaskIntoConstraints="NO" id="VqL-pg-nij">
+                    <rect key="frame" x="128" y="375" width="119" height="37"/>
+                </pageControl>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hac-SW-gSx">
+                    <rect key="frame" x="325" y="352" width="40" height="60"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="닫기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kI1-ij-iKh">
+                            <rect key="frame" x="0.0" y="39" width="40" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="Zl0-c0-flX"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.9999160171" green="1" blue="0.99987202880000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbK-zE-ibp">
+                            <rect key="frame" x="0.0" y="0.0" width="40" height="39"/>
+                            <state key="normal" title="Button" image="ico_x_white"/>
+                            <connections>
+                                <action selector="pressedCloseBtn:" destination="-1" eventType="touchUpInside" id="sxp-Mn-jMp"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="kI1-ij-iKh" firstAttribute="centerX" secondItem="Hac-SW-gSx" secondAttribute="centerX" id="8bk-ai-lXA"/>
+                        <constraint firstItem="jbK-zE-ibp" firstAttribute="leading" secondItem="Hac-SW-gSx" secondAttribute="leading" id="CPY-iI-c6j"/>
+                        <constraint firstAttribute="width" constant="40" id="JHK-68-RGw"/>
+                        <constraint firstAttribute="height" constant="60" id="cDE-E5-R3R"/>
+                        <constraint firstItem="kI1-ij-iKh" firstAttribute="width" secondItem="Hac-SW-gSx" secondAttribute="width" id="cZg-84-eNZ"/>
+                        <constraint firstItem="kI1-ij-iKh" firstAttribute="top" secondItem="jbK-zE-ibp" secondAttribute="bottom" id="egs-tD-4ur"/>
+                        <constraint firstItem="jbK-zE-ibp" firstAttribute="width" secondItem="Hac-SW-gSx" secondAttribute="width" id="u1N-lm-z7F"/>
+                        <constraint firstAttribute="bottom" secondItem="kI1-ij-iKh" secondAttribute="bottom" id="uBE-tr-lUW"/>
+                        <constraint firstItem="jbK-zE-ibp" firstAttribute="top" secondItem="Hac-SW-gSx" secondAttribute="top" id="wWN-P8-a8X"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="VqL-pg-nij" secondAttribute="bottom" constant="10" id="1br-gx-iI4"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="XNV-BN-swb" secondAttribute="bottom" id="1gy-VN-Uj1"/>
+                <constraint firstItem="XNV-BN-swb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="8pE-oS-wAu"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="XNV-BN-swb" secondAttribute="trailing" id="CBc-Pr-hvc"/>
+                <constraint firstItem="XNV-BN-swb" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="D2t-o9-lKJ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Hac-SW-gSx" secondAttribute="trailing" constant="10" id="j8M-00-nRt"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Hac-SW-gSx" secondAttribute="bottom" constant="10" id="nbg-TH-Zmy"/>
+                <constraint firstItem="VqL-pg-nij" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="ssC-Vx-Lc0"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-2008" y="74"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ico_x_white" width="45" height="45"/>
+    </resources>
+</document>
