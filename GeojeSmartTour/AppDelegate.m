@@ -5,6 +5,7 @@
 //  Created by min su kwon on 2017. 12. 6..
 //  Copyright © 2017년 min su kwon. All rights reserved.
 //
+// Git
 
 #import "AppDelegate.h"
 #import "TheConnection.h"
